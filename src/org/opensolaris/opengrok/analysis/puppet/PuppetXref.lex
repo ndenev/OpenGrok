@@ -50,7 +50,7 @@ import org.opensolaris.opengrok.web.Util;
 /* Must match WHITE_SPACE constant */
 WhiteSpace     = [ \t\f]+
 EOL = \r|\n|\r\n
-Identifier = [a-zA-Z_] [a-zA-Z0-9_]+
+Identifier = [a-zA-Z_] [a-zA-Z0-9_:]+
 
 URIChar = [\?\+\%\&\:\/\.\@\_\;\=\$\,\-\!\~\*\\]
 FNameChar = [a-zA-Z0-9_\-\.]
