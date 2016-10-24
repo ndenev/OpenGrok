@@ -76,6 +76,7 @@ import org.opensolaris.opengrok.analysis.php.PhpAnalyzerFactory;
 import org.opensolaris.opengrok.analysis.plain.PlainAnalyzerFactory;
 import org.opensolaris.opengrok.analysis.plain.XMLAnalyzerFactory;
 import org.opensolaris.opengrok.analysis.python.PythonAnalyzerFactory;
+import org.opensolaris.opengrok.analysis.puppet.PuppetAnalyzerFactory;
 import org.opensolaris.opengrok.analysis.scala.ScalaAnalyzerFactory;
 import org.opensolaris.opengrok.analysis.clojure.ClojureAnalyzerFactory;
 import org.opensolaris.opengrok.analysis.sh.ShAnalyzerFactory;

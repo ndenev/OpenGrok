@@ -177,6 +177,13 @@ public class Ctags {
             command.add("--regex-pascal=/^(uses|interface|implementation)$/\\1/s,Section/");
             command.add("--regex-pascal=/^unit[[:space:]]+([a-zA-Z0-9_<>, ]+)[;(]/\\1/u,unit/");
             
+            command.add("--langdef=puppet");
+            command.add("--langmap=puppet:.pp");
+            command.add("--regex-puppet=/^class[[:space:]]*([a-zA-Z0-9_-]+)[[:space:]]*/\\1/d,definition/");
+            command.add("--regex-puppet=/^site[[:space:]]*([a-zA-Z0-9_-]+)[[:space:]]*/\\1/d,definition/");
+            command.add("--regex-puppet=/^node[[:space:]]*([a-zA-Z0-9_-]+)[[:space:]]*/\\1/d,definition/");
+            command.add("--regex-puppet=/^define[[:space:]]*([a-zA-Z0-9_-]+)[[:space:]]*/\\1/d,definition/");
+
             //PLEASE add new languages ONLY with POSIX syntax (see above wiki link)
             
             /* Add extra command line options for ctags. */
